@@ -1,5 +1,6 @@
 # get finish time for each day
 
+import datetime
 import requests
 import json
 
@@ -25,7 +26,7 @@ def key():
         return "Error"
 
 
-def ttable():
+def ttable(class_id):
     url_ttable = "https://web.skola24.se/api/render/timetable"
     payload_ttable = {
         "renderKey": f"{key()}",
@@ -38,11 +39,11 @@ def ttable():
         "width": 1280,
         "height": 720,
         "selectionType": 0,
-        "selection": "MGM0ZDc2MmQtYTZkZi1mMDcyLTg0ZDgtYzFkM2Q1ZDBiZDEy",
+        "selection": f"{class_id}",
         "showHeader": False,
         "periodText": "",
-        "week": 33,
-        "year": 2022,
+        "week": 33,  # need to update to current week number
+        "year": 2022,  # need to update to current year
         "privateFreeTextMode": None,
         "privateSelectionMode": False,
         "customerKey": "",
@@ -58,11 +59,22 @@ def ttable():
             return "Error_ttable"
 
 
-def times(day):
-    for x in ttable():
+def times(day, class_id):
+    for x in ttable(class_id):
         if x["dayOfWeekNumber"] == day:
             yield x["timeEnd"]
 
 
-def finish(day):
-    return max(list(times(day)))
+def finish(day, class_id):
+    return max(list(times(day, class_id)))
+
+
+def finish_today(class_id):
+    return finish(datetime.datetime.today().isoweekday(), class_id)
+
+
+class_6a = "MGM0ZDc2MmQtYTZkZi1mMDcyLTg0ZDgtYzFkM2Q1ZDBiZDEy"
+class_5b = "YjJjNTkxZTItMDNjNS1mMDIwLTg1NWUtNzRiMzgzYzZlMmY4"
+class_4a = "NDIwOTA3ZjQtYWRiZS1mNjI3LWE5NzYtMDNiNjgyZmQ4ODVk"
+
+print(finish_today(class_4a))
