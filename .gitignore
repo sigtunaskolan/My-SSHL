@@ -1,4 +1,9 @@
 /.DS_Store
 /__pycache__
 /env
+<<<<<<< HEAD
+=======
+/lessoninfo.json
+/playground.py
 /venv
+>>>>>>> dbd0dce53efd6f2a15e842c3875dad980b10bc8c
