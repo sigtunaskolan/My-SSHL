@@ -14,3 +14,7 @@ def index():
 
 if __name__ == "__main__":
     app.run()
+
+# implement different route per class
+# implement route for weekend
+# remove seconds from time
