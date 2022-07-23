@@ -4,6 +4,10 @@ import datetime
 import requests
 import json
 
+class_6a = "MGM0ZDc2MmQtYTZkZi1mMDcyLTg0ZDgtYzFkM2Q1ZDBiZDEy"
+class_5b = "YjJjNTkxZTItMDNjNS1mMDIwLTg1NWUtNzRiMzgzYzZlMmY4"
+class_4a = "NDIwOTA3ZjQtYWRiZS1mNjI3LWE5NzYtMDNiNjgyZmQ4ODVk"
+
 headers = {
     "Content-Type": "application/json",
     "X-Scope": "8a22163c-8662-4535-9050-bc5e1923df48",
@@ -71,10 +75,3 @@ def finish(day, class_id):
 
 def finish_today(class_id):
     return finish(datetime.datetime.today().isoweekday(), class_id)
-
-
-class_6a = "MGM0ZDc2MmQtYTZkZi1mMDcyLTg0ZDgtYzFkM2Q1ZDBiZDEy"
-class_5b = "YjJjNTkxZTItMDNjNS1mMDIwLTg1NWUtNzRiMzgzYzZlMmY4"
-class_4a = "NDIwOTA3ZjQtYWRiZS1mNjI3LWE5NzYtMDNiNjgyZmQ4ODVk"
-
-print(finish_today(class_4a))
