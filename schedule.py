@@ -70,7 +70,7 @@ def finish(day, class_id):
 
 
 def finish_today(class_id):
-    return finish(datetime.datetime.today().isoweekday(), class_id)
+    return finish(1, class_id)
 
 
 class_6a = "MGM0ZDc2MmQtYTZkZi1mMDcyLTg0ZDgtYzFkM2Q1ZDBiZDEy"
