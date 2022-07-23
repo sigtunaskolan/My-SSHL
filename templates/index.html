@@ -1,34 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <style>
-      h1 {
-        text-align: center;
-      }
-    </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../static/css/style.css">
     <title>My SSHL</title>
+   
   </head>
 
   <body>
     <div class="titel">
-      <h1>Ses Sen</h1>
+      <h1>INSTANS</h1>
     </div>
-    
-    <p>{{foura}}</p>
+
+        <div id="top-image"></div>
+
+    <script> 
+    $(document).ready(function() {
+      var movementStrength = 25;
+      var height = movementStrength / $(window).height();
+      var width = movementStrength / $(window).width();
+      $("#top-image").mousemove(function(e){
+                var pageX = e.pageX - ($(window).width() / 2);
+                var pageY = e.pageY - ($(window).height() / 2);
+                var newvalueX = width * pageX * -1 - 25;
+                var newvalueY = height * pageY * -1 - 50;
+                $('#top-image').css("background-position", 
+      newvalueX+"px     "+newvalueY+"px");
+      });
+      });
+      </script>
 
     <div class="container">
-      <div class ="box"><h2>BM24</h2>
+      <div class ="box">
+        <div class = "klass"><h2>BM23</h2></div>
         <div class ="content"><h3>15:45</h3></div>
       </div>
-      <div class ="box"><h2>SA24</h2></div>
-      <div class ="box"><h2>EK24</h2></div>
-      <div class ="box"><h2>NA24</h2></div>
-      <div class ="box"><h2>DP24</h2></div>
+      <div class ="box">
+        <div class = "klass"><h2>EK23</h2></div>
+        <div class ="content"><h3>14:30</h3></div>
+      </div>
+      <div class ="box">
+        <div class = "klass"><h2>NA23</h2></div>
+        <div class ="content"><h3>12:30</h3></div>
+      </div>
+      <div class ="box">
+        <div class = "klass"><h2>SA23</h2></div>
+        <div class ="content"><h3>15:30</h3></div>
+      </div>
+      <div class ="box">
+        <div class = "klass"><h2>DP23</h2></div>
+        <div class ="content"><h3>20:00</h3></div>
+      </div>
     </div>
+
+    <div class="container">
+      <div class ="box">
+        <div class = "klass"><h2>BM24</h2></div>
+        <div class ="content"><h3>{{foura}}</h3></div>
+      </div>
+      <div class ="box">
+        <div class = "klass"><h2>EK24</h2></div>
+        <div class ="content"><h3>14:30</h3></div>
+      </div>
+      <div class ="box">
+        <div class = "klass"><h2>NA24</h2></div>
+        <div class ="content"><h3>12:30</h3></div>
+      </div>
+      <div class ="box">
+        <div class = "klass"><h2>SA24</h2></div>
+        <div class ="content"><h3>15:30</h3></div>
+      </div>
+      <div class ="box">
+        <div class = "klass"><h2>DP24</h2></div>
+        <div class ="content"><h3>20:00</h3></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class ="box">
+        <div class = "klass"><h2>BM25</h2></div>
+        <div class ="content"><h3>15:45</h3></div>
+      </div>
+      <div class ="box">
+        <div class = "klass"><h2>EK25</h2></div>
+        <div class ="content"><h3>14:30</h3></div>
+      </div>
+      <div class ="box">
+        <div class = "klass"><h2>NA25</h2></div>
+        <div class ="content"><h3>12:30</h3></div>
+      </div>
+      <div class ="box">
+        <div class = "klass"><h2>SA25</h2></div>
+        <div class ="content"><h3>15:30</h3></div>
+      </div>
+      <div class ="box">
+        <div class = "klass"><h2>MYP5</h2></div>
+        <div class ="content"><h3>20:00</h3></div>
+      </div>
+    </div>
+      
+
 
   </body>
 </html>
