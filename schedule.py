@@ -73,5 +73,12 @@ def finish(day, class_id):
     return max(list(times(day, class_id)))
 
 
+# day set to 1 for testing purposes.
 def finish_today(class_id):
-    return finish(datetime.datetime.today().isoweekday(), class_id)
+    return finish(1, class_id)
+
+
+# end time for each class functiom:
+foura = finish_today(class_4a)
+fiveb = finish_today(class_5b)
+sixa = finish_today(class_6a)
