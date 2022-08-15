@@ -9,6 +9,11 @@ def index():
     return render_template("index.html", foura=foura, sixa=sixa, fiveb=fiveb)
 
 
+@app.route("/testsub")
+def testsub():
+    return render_template("testsub.html")
+
+
 if __name__ == "__main__":
     app.run()
 
