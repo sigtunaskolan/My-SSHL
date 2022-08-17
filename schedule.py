@@ -34,8 +34,8 @@ def ttable(class_id):
     url_ttable = "https://web.skola24.se/api/render/timetable"
     payload_ttable = {
         "renderKey": f"{key()}",
-        "host": "boras.skola24.se",
-        "unitGuid": "M2E2ZjI4Y2UtNDFhYS1mNWFhLWE4NTQtMTI2YWYyYzk1MWU2",
+        "host": "sshl.skola24.se",
+        "unitGuid": "NGIwYjNiM2UtNzcwNi1mNzc4LTgxZDYtYWY0M2Q4OGM5YzE1",
         "startDate": None,
         "endDate": None,
         "scheduleDay": 0,
