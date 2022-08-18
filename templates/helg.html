@@ -3,19 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Secular+One&family=Staatliches&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="../static/css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/helg.css" />
     <title>INSTANs</title>
   </head>
   <body>
-    <h1>Vi ses på måndag!</h1>
+    <div id="scene" data-relative-input="true">
+      <img
+        src="/static/img/background.jpeg"
+        data-depth="0.05"
+        width="100%"
+        class="img-1"
+      />
+      <div class="background-overlay"></div>
+    </div>
+    <div class="container">
+      <h1 id="helgTitel">Vi ses på Måndag!</h1>
+    </div>
+
+    <! -- scripts -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"
+    ></script>
+    <script src="../static/script/main.js"></script>
   </body>
 </html>

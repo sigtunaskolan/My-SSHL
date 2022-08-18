@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Prompt:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Prompt:wght@500&display=swap");
 @import url("https://use.typekit.net/lzp4tvs.css");
 
-
-
-body{
-  background-image: url('https://trinker.media/assets/img/background.jpg');
+body {
+  background-image: url("https://trinker.media/assets/img/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   margin: 0;
   padding: 0;
-
 }
 
 .logga {
-  position: fixed; left: 0vmax; top: 2vmin auto;
+  position: fixed;
+  left: 0vmax;
+  top: 2vmin auto;
   width: 100%;
   height: 15vmin;
   vertical-align: center;
@@ -22,129 +21,134 @@ body{
   justify-content: center;
 }
 
-.logga img{
-  position: relative;  left: 37.5%; top: 2vmin auto;
+.logga img {
+  position: relative;
+  left: 37.5%;
+  top: 2vmin auto;
   max-width: 25vmax;
   max-height: 12vmax;
   vertical-align: auto;
-  margin-top:1.5%;
-  display:flex;
+  margin-top: 1.5%;
+  display: flex;
 }
 
-@media (min-width:500px) and (max-width: 800px) {
-  .logga img{
+@media (min-width: 500px) and (max-width: 800px) {
+  .logga img {
     text-align: center;
     vertical-align: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    position: relative; top: 2vmin auto;
-    
-}
+    position: relative;
+    top: 2vmin auto;
+  }
 }
 
 @media screen and (max-width: 600px) {
-  .logga{
-
-    position:absolute;
-    top:50%;
-    left:50%;
+  .logga {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-}
+  }
 }
 
 @media screen and (max-width: 600px) {
-  .logga img{
-    position:absolute;
-    top:70%;
-    left:50%;
+  .logga img {
+    position: absolute;
+    top: 70%;
+    left: 50%;
     transform: translate(-50%, -50%);
     max-width: 30vmax;
     max-height: 25vmax;
-}
+  }
 }
 
 @media (min-width: 600px) and (max-width: 1000px) {
-  .logga img{
-    position:absolute;
-    top:50%;
-    left:50%;
+  .logga img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     max-width: 25vmax;
     max-height: 20vmax;
-}
+  }
 }
 
-.titel{
-    position:fixed; left: 0px; top: -2%;
-    width: 100%;
-    box-sizing: content-box;
-    height: 8vmax;
-    background-color: #111A3D;
-    margin: 0 auto;
-    padding: 0 auto;
-    text-align: center;
-    z-index: 3;
-    display: flex;
-    flex-wrap: wrap;
+.titel {
+  position: fixed;
+  left: 0px;
+  top: -2%;
+  width: 100%;
+  box-sizing: content-box;
+  height: 8vmax;
+  background-color: #111a3d;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 600px) {
-    .titel {
-
-      height: 14vmax;
-    }
+  .titel {
+    height: 14vmax;
+  }
 }
-  
+
 .grupp {
-    position:relative; left: 0px; top: 9vmax;
-    width: 50%;
-    box-sizing: content-box;
-    height: 4vmax;
-    background-color: #060f3d;
-    margin: 0 auto;
-    padding: 0 auto;
-    text-align: center;
-    z-index: 1;
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 30%;
+  position: relative;
+  left: 0px;
+  top: 9vmax;
+  width: 50%;
+  box-sizing: content-box;
+  height: 4vmax;
+  background-color: #060f3d;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 30%;
 }
 
-.grupp p{
-    color:#ffffff;
-    font-family: "trade-gothic-next", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 4vmax;
-    position:relative; left: 13.5vmax; top: -0.8vmax;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 auto;
-    text-align: center;
-    vertical-align: center;
-    z-index: 1;
-    display: flex;
-    flex-wrap: wrap;
+.grupp p {
+  color: #ffffff;
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4vmax;
+  position: relative;
+  left: 13.5vmax;
+  top: -0.8vmax;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+  vertical-align: center;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 500px) {
-    .grupp {
-      display: none;
-
-    }
-    .grupp p{
-      display: none;
-    }
+  .grupp {
+    display: none;
+  }
+  .grupp p {
+    display: none;
+  }
 }
 
 h2 {
-  color:#2b3872;
+  color: #2b3872;
   font-family: "forma-djr-deck", sans-serif;
   font-weight: 900;
   font-style: normal;
-  font-size: 3vw; 
+  font-size: 3vw;
   text-align: center;
   vertical-align: center;
   width: 100%;
@@ -153,40 +157,46 @@ h2 {
   top: 2vw;
 }
 
-
-
-.container{
-    position: relative; left: 2%; top: 4vh;
-    width: 85%;
-    height: 100%;
-    margin: 15vh auto;; 
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    vertical-align: center;
-    text-align: center;
+.container {
+  position: relative;
+  left: 2%;
+  top: 4vh;
+  width: 85%;
+  height: 100%;
+  margin: 15vh auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  vertical-align: center;
+  text-align: center;
 }
 
-.container .button{
-    vertical-align: center;
-    text-align: center;
-    position:relative;
-    width: 60%;
-    height: 100%;
-    background-image: linear-gradient(to bottom right, rgb(194, 236, 255), rgb(99, 138, 223));
-    margin: 10%;
-    box-sizing: border-box;
-    border-radius: 2vmin;
-    z-index: 1;
-    display: flex;
-    border: none;
+.container .button {
+  vertical-align: center;
+  text-align: center;
+  position: relative;
+  width: 60%;
+  height: 100%;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(194, 236, 255),
+    rgb(99, 138, 223)
+  );
+  margin: 10%;
+  box-sizing: border-box;
+  border-radius: 2vmin;
+  z-index: 1;
+  display: flex;
+  border: none;
 }
 button:active {
   border-style: outset;
 }
 
 @media (max-width: 600px) {
-  .container{
-    position: relative; left: 11%; top: 30vw;
+  .container {
+    position: relative;
+    left: 11%;
+    top: 30vw;
     grid-template-columns: repeat(2, 1fr);
     width: 70%;
     height: 100%;
@@ -194,9 +204,11 @@ button:active {
     vertical-align: center;
     text-align: center;
     align-items: center;
-    }
-  .container .button{
-    position: relative; left: 0px; top: -10vw auto;;
+  }
+  .container .button {
+    position: relative;
+    left: 0px;
+    top: -10vw auto;
     width: 60%;
     height: 80%;
     margin: 10%;
@@ -209,7 +221,9 @@ button:active {
 }
 
 .ib {
-  position:relative; left: 0px; top: 4vmax;
+  position: relative;
+  left: 0px;
+  top: 4vmax;
   width: 20%;
   box-sizing: content-box;
   height: 4vmax;
@@ -223,13 +237,15 @@ button:active {
   border-radius: 30%;
 }
 
-.ib p{
-  color:#ffffff;
+.ib p {
+  color: #ffffff;
   font-family: "trade-gothic-next", sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 4vmax;
-  position:relative; left: 8vmax; top: -0.8vmax;
+  position: relative;
+  left: 8vmax;
+  top: -0.8vmax;
   width: 100%;
   margin: 0 auto;
   padding: 0 auto;
@@ -244,15 +260,17 @@ button:active {
   .ib {
     display: none;
   }
-  .ib p{
+  .ib p {
     display: inherit;
   }
 }
 
 .klockan {
-  position: relative; left: 0px; top: 10vmax;
+  position: relative;
+  left: 0px;
+  top: 10vmax;
   width: 40vmax;
-  height:8%;
+  height: 8%;
   margin: 0 auto;
   padding: 0 auto;
   text-align: center;
@@ -260,17 +278,23 @@ button:active {
   display: flex;
   flex-wrap: wrap;
   border-radius: 2vmin;
-  background-image: linear-gradient(to bottom right, rgb(194, 236, 255), rgb(99, 138, 223));
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(194, 236, 255),
+    rgb(99, 138, 223)
+  );
 }
 
 .klockan .tid {
-  position: relative; left: 0px; top: 0px;
+  position: relative;
+  left: 0px;
+  top: 0px;
   width: 100%;
   height: 100%;
 }
 
 h3 {
-  color:#2b3872;
+  color: #2b3872;
   font-family: "trade-gothic-next", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -279,12 +303,12 @@ h3 {
   text-align: center;
   vertical-align: center;
   width: 100%;
-  margin:auto;
+  margin: auto;
   margin-top: 4vw;
 }
 
 h4 {
-  color:#2b3872;
+  color: #2b3872;
   font-family: "trade-gothic-next", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -293,12 +317,12 @@ h4 {
   text-align: center;
   vertical-align: center;
   width: 100%;
-  margin:auto;
+  margin: auto;
   margin-bottom: 5vw;
   margin-top: 4vw;
 }
 h5 {
-  color:#2b3872;
+  color: #2b3872;
   font-family: "trade-gothic-next", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -307,12 +331,12 @@ h5 {
   text-align: center;
   vertical-align: center;
   width: 100%;
-  margin:auto;
+  margin: auto;
   margin-bottom: 1vw;
 }
 
 h6 {
-  color:#ffffff;
+  color: #ffffff;
   font-family: "forma-djr-deck", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -322,17 +346,15 @@ h6 {
   vertical-align: center;
   width: 100%;
   margin-bottom: 1vw;
-  background-color: #111A3D;
-  margin:auto;
+  background-color: #111a3d;
+  margin: auto;
 }
 
-
-    
-  
-
 @media (max-width: 600px) {
-  .klockan{
-    position: relative; left: 0; top:20vmax;
+  .klockan {
+    position: relative;
+    left: 0;
+    top: 20vmax;
     width: 80%;
     height: 100%;
     vertical-align: center;
@@ -341,34 +363,35 @@ h6 {
     justify-content: center;
   }
 
-.klockan .tid{
-    position: relative; left: 0px; top: -10vw auto;;
+  .klockan .tid {
+    position: relative;
+    left: 0px;
+    top: -10vw auto;
     width: 100%;
     height: 80%;
     margin: 10%;
     display: inline block;
   }
 
-  .klockan .tid h3{
+  .klockan .tid h3 {
     font-size: 10vw;
-
   }
 
-  .klockan .tid h4{
+  .klockan .tid h4 {
     font-size: 10vw;
-
   }
 
-  .klockan .tid h5{
+  .klockan .tid h5 {
     font-size: 3vw;
-
   }
 
-  .klockan .tid h6{
+  .klockan .tid h6 {
     font-size: 12vw;
     width: 126%;
     margin-top: none;
-    position: relative; left: -8vw; top: -8vw;
+    position: relative;
+    left: -8vw;
+    top: -8vw;
     margin-bottom: 0%;
   }
 }
