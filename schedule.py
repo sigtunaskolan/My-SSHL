@@ -3,20 +3,10 @@
 import datetime
 import requests
 import json
-
-class_6a = "MGM0ZDc2MmQtYTZkZi1mMDcyLTg0ZDgtYzFkM2Q1ZDBiZDEy"
-class_5b = "YjJjNTkxZTItMDNjNS1mMDIwLTg1NWUtNzRiMzgzYzZlMmY4"
-class_4a = "NDIwOTA3ZjQtYWRiZS1mNjI3LWE5NzYtMDNiNjgyZmQ4ODVk"
-
-headers = {
-    "Content-Type": "application/json",
-    "X-Scope": "8a22163c-8662-4535-9050-bc5e1923df48",
-}
+from variablesBE import *
 
 
 def key():
-    url_key = "https://web.skola24.se/api/get/timetable/render/key"
-    payload_key = "null"
     r_k = requests.post(url_key, headers=headers, data=payload_key)
     js = r_k.json()
 
@@ -31,7 +21,6 @@ def key():
 
 
 def ttable(class_id):
-    url_ttable = "https://web.skola24.se/api/render/timetable"
     payload_ttable = {
         "renderKey": f"{key()}",
         "host": "sshl.skola24.se",
@@ -46,13 +35,12 @@ def ttable(class_id):
         "selection": f"{class_id}",
         "showHeader": False,
         "periodText": "",
-        "week": 33,  # need to update to current week number
-        "year": 2022,  # need to update to current year
+        "week": 34,  # update to this when w34 reached: datetime.date.today().isocalendar()[1]
+        "year": datetime.date.today().isocalendar()[0],
         "privateFreeTextMode": None,
         "privateSelectionMode": False,
         "customerKey": "",
     }
-
     r_t = requests.post(url_ttable, headers=headers, json=payload_ttable)
     js_t = r_t.json()
 
@@ -73,12 +61,14 @@ def finish(day, class_id):
     return max(list(times(day, class_id)))
 
 
-# day set to 1 for testing purposes.
 def finish_today(class_id):
-    return finish(1, class_id)
+    return finish(datetime.datetime.today().isoweekday(), class_id)[:-3].strip()
 
 
-# end time for each class functiom:
-foura = finish_today(class_4a)
-fiveb = finish_today(class_5b)
-sixa = finish_today(class_6a)
+# class finish times
+dp23 = finish_today(d23)
+dp24 = finish_today(d24)
+myp5a = finish_today(m5a)
+myp5b = finish_today(m5b)
+
+print(dp24)
