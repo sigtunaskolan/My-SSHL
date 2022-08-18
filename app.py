@@ -93,23 +93,26 @@ def sa25():
 
 @app.route("/dp23")
 def dp23():
-    return render_template("Dp23.html")
+    dp23 = finish_today(d23)
+    return render_template("Dp23.html", dp23=dp23)
 
 
 @app.route("/dp24")
 def dp24():
-    return render_template("Dp24.html")
+    dp24 = finish_today(d24)
+    return render_template("Dp24.html", dp24=dp24)
 
 
 @app.route("/cp23")
 def cp23():
-    return render_template("Cp23.html")
+    cp23 = finish_today(c23)
+    return render_template("Cp23.html", cp23=cp23)
 
 
 @app.route("/cp24")
 def cp24():
-    return render_template("Cp24.html")
-
+    cp24 = finish_today(c24)
+    return render_template("Cp24.html", cp24=cp24)
 
 
 if __name__ == "__main__":

@@ -63,12 +63,3 @@ def finish(day, class_id):
 
 def finish_today(class_id):
     return finish(datetime.datetime.today().isoweekday(), class_id)[:-3].strip()
-
-
-# class finish times
-dp23 = finish_today(d23)
-dp24 = finish_today(d24)
-myp5a = finish_today(m5a)
-myp5b = finish_today(m5b)
-
-print(dp24)
