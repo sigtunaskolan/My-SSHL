@@ -4,104 +4,124 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Secular+One&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="prefetch" href="Bm23.html" />
     <title>My SSHL</title>
-   
   </head>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+    function btnB3() {
+      window.location.href = "/Bm23";
+    }
+
+    function btnE3() {
+      window.location.href = "/Ek23";
+    }
+
+    function btnN3() {
+      window.location.href = "/Na23";
+    }
+
+    function btnS3() {
+      window.location.href = "/Sa23";
+    }
+
+    function btnB4() {
+      window.location.href = "/Bm24";
+    }
+
+    function btnE4() {
+      window.location.href = "/Ek24";
+    }
+
+    function btnN4() {
+      window.location.href = "/Na24";
+    }
+
+    function btnS4() {
+      window.location.href = "/Sa24";
+    }
+
+    function btnB5() {
+      window.location.href = "/Bm25";
+    }
+
+    function btnE5() {
+      window.location.href = "/Ek25";
+    }
+
+    function btnN5() {
+      window.location.href = "/Na25";
+    }
+
+    function btnS5() {
+      window.location.href = "/Sa25";
+    }
+
+    $("body").mousemove(function (e) {
+      var mouseX = (e.pageX * -1) / 15;
+      var mouseY = (e.pageY * -1) / 15;
+      $(this).css("background-position", mouseX + "px " + mouseY + "px");
+    });
+  </script>
 
   <body>
     <div class="titel">
-      <h1>INSTANS</h1>
+      <div><h1>INSTANS</h1></div>
     </div>
 
-        <div id="top-image"></div>
-
-    <script> 
-    $(document).ready(function() {
-      var movementStrength = 25;
-      var height = movementStrength / $(window).height();
-      var width = movementStrength / $(window).width();
-      $("#top-image").mousemove(function(e){
-                var pageX = e.pageX - ($(window).width() / 2);
-                var pageY = e.pageY - ($(window).height() / 2);
-                var newvalueX = width * pageX * -1 - 25;
-                var newvalueY = height * pageY * -1 - 50;
-                $('#top-image').css("background-position", 
-      newvalueX+"px     "+newvalueY+"px");
-      });
-      });
-      </script>
-
-    <div class="container">
-      <div class ="box">
-        <div class = "klass"><h2>BM23</h2></div>
-        <div class ="content"><h3>15:45</h3></div>
-      </div>
-      <div class ="box">
-        <div class = "klass"><h2>EK23</h2></div>
-        <div class ="content"><h3>14:30</h3></div>
-      </div>
-      <div class ="box">
-        <div class = "klass"><h2>NA23</h2></div>
-        <div class ="content"><h3>12:30</h3></div>
-      </div>
-      <div class ="box">
-        <div class = "klass"><h2>SA23</h2></div>
-        <div class ="content"><h3>15:30</h3></div>
-      </div>
-      <div class ="box">
-        <div class = "klass"><h2>DP23</h2></div>
-        <div class ="content"><h3>20:00</h3></div>
-      </div>
+    <div class="grupp">
+      <div><p>GYMNASIET</p></div>
     </div>
 
     <div class="container">
-      <div class ="box">
-        <div class = "klass"><h2>BM24</h2></div>
-        <div class ="content"><h3>{{foura}}</h3></div>
-      </div>
-      <div class ="box">
-        <div class = "klass"><h2>EK24</h2></div>
-        <div class ="content"><h3>14:30</h3></div>
-      </div>
-      <div class ="box">
-        <div class = "klass"><h2>NA24</h2></div>
-        <div class ="content"><h3>12:30</h3></div>
-      </div>
-      <div class ="box">
-        <div class = "klass"><h2>SA24</h2></div>
-        <div class ="content"><h3>15:30</h3></div>
-      </div>
-      <div class ="box">
-        <div class = "klass"><h2>DP24</h2></div>
-        <div class ="content"><h3>20:00</h3></div>
-      </div>
+      <div class="button" onclick="btnB3()"><h2>BM23</h2></div>
+
+      <div class="button" onclick="btnE3()"><h2>EK23</h2></div>
+
+      <div class="button" onclick="btnN3()"><h2>NA23</h2></div>
+
+      <div class="button" onclick="btnS3()"><h2>SA23</h2></div>
+    </div>
+    <div class="container">
+      <div class="button" onclick="btnB4()"><h2>BM24</h2></div>
+
+      <div class="button" onclick="btnE4()"><h2>EK24</h2></div>
+
+      <div class="button" onclick="btnN4()"><h2>NA24</h2></div>
+
+      <div class="button" onclick="btnS4()"><h2>SA24</h2></div>
+    </div>
+    <div class="container">
+      <div class="button" onclick="btnB5()"><h2>BM25</h2></div>
+
+      <div class="button" onclick="btnE5()"><h2>EK25</h2></div>
+
+      <div class="button" onclick="btnN5()"><h2>NA25</h2></div>
+
+      <div class="button" onclick="btnS5()"><h2>SA25</h2></div>
+    </div>
+
+    <div class="ib">
+      <div><p>IB</p></div>
     </div>
 
     <div class="container">
-      <div class ="box">
-        <div class = "klass"><h2>BM25</h2></div>
-        <div class ="content"><h3>15:45</h3></div>
-      </div>
-      <div class ="box">
-        <div class = "klass"><h2>EK25</h2></div>
-        <div class ="content"><h3>14:30</h3></div>
-      </div>
-      <div class ="box">
-        <div class = "klass"><h2>NA25</h2></div>
-        <div class ="content"><h3>12:30</h3></div>
-      </div>
-      <div class ="box">
-        <div class = "klass"><h2>SA25</h2></div>
-        <div class ="content"><h3>15:30</h3></div>
-      </div>
-      <div class ="box">
-        <div class = "klass"><h2>MYP5</h2></div>
-        <div class ="content"><h3>20:00</h3></div>
-      </div>
+      <div class="button" onclick="btnD3()"><h2>DP23</h2></div>
+
+      <div class="button" onclick="btnC3()"><h2>CP23</h2></div>
+
+      <div class="button" onclick="btnD4()"><h2>DP24</h2></div>
+
+      <div class="button" onclick="btnC4()"><h2>CP24</h2></div>
     </div>
-      
-
-
   </body>
 </html>
