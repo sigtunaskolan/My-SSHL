@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Prompt:wght@500&display=swap');
+@import url("https://use.typekit.net/lzp4tvs.css");
 
 
 
@@ -12,84 +13,67 @@ body{
 
 }
 
+.logga {
+  position: fixed; left: 0vmax; top: 2vmin auto;
+  width: 100%;
+  height: 15vmin;
+  vertical-align: center;
+  text-align: center;
+  justify-content: center;
+}
 
-.titel h1{
-    color:#ffffff;
-    font-family: 'Secular One', sans-serif;
-    font-size: 5vmax;
-    position:fixed; top:-7.5vmin;
+.logga img{
+  position: relative;  left: 37.5%; top: 2vmin auto;
+  max-width: 25vmax;
+  max-height: 12vmax;
+  vertical-align: auto;
+  margin-top:1.5%;
+  display:flex;
+}
+
+@media (min-width:500px) and (max-width: 800px) {
+  .logga img{
     text-align: center;
-    align-items: center;
-    vertical-align: center;
-    width: 100%;
-    justify-content: center;
+    vertical-align: auto;
     display: flex;
     flex-wrap: wrap;
-    z-index: 4;
+    justify-content: center;
+    align-items: center;
+    position: relative; top: 2vmin auto;
+    
+}
 }
 
-@media (min-width: 500px) and (max-width: 1600px) {
-    .titel h1{
-      position:fixed;
-      font-size: 8vmin;
-      top:-7vmin;
-    }
+@media screen and (max-width: 600px) {
+  .logga{
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
 }
 
-@media (min-width: 800px) and (max-width: 1000px) {
-  .titel h1{
-    position:fixed;
-    font-size: 7.5vmax;
-    top:-7vmax;
-  }
+@media screen and (max-width: 600px) {
+  .logga img{
+    position:absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    max-width: 30vmax;
+    max-height: 25vmax;
+}
 }
 
-@media (min-width: 1600px) and (max-width: 2900px) {
-  .titel h1{
-    position:fixed;
-    font-size: 5vmax;
-    top:-3.5vmax;
-  }
+@media (min-width: 600px) and (max-width: 1000px) {
+  .logga img{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    max-width: 25vmax;
+    max-height: 20vmax;
 }
-
-@media (min-width: 400px) and (max-width: 500px) {
-  .titel h1{
-    position:fixed;
-    font-size: 10vmin;
-    top:-8vmin;
-  }
-}
-
-@media (max-width: 500px) {
-  .titel h1{
-    position:fixed;
-    font-size: 16vmin;
-    top:-8vmin;
-  }
-}
-
-@media (min-width: 1300px) and (max-width: 1400px) {
-  .titel h1{
-    position:fixed;
-    font-size: 12vmin;
-    top:-10vmin;
-  }
-}
-
-@media (min-width: 1100px) and (max-width: 1200px) {
-  .titel h1{
-    position:fixed;
-    font-size: 11vmin;
-    top:-10vmin;
-  }
-}
-
-@media (min-width: 1200px) and (max-width: 1300px) {
-  .titel h1{
-    position:fixed;
-    font-size: 11.5vmin;
-    top:-10vmin;
-  }
 }
 
 .titel{
@@ -106,7 +90,7 @@ body{
     flex-wrap: wrap;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .titel {
 
       height: 14vmax;
@@ -130,7 +114,9 @@ body{
 
 .grupp p{
     color:#ffffff;
-    font-family: 'Secular One', sans-serif;
+    font-family: "trade-gothic-next", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 4vmax;
     position:relative; left: 13.5vmax; top: -0.8vmax;
     width: 100%;
@@ -155,7 +141,9 @@ body{
 
 h2 {
   color:#2b3872;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "forma-djr-deck", sans-serif;
+  font-weight: 900;
+  font-style: normal;
   font-size: 3vw; 
   text-align: center;
   vertical-align: center;
@@ -237,7 +225,9 @@ button:active {
 
 .ib p{
   color:#ffffff;
-  font-family: 'Secular One', sans-serif;
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 4vmax;
   position:relative; left: 8vmax; top: -0.8vmax;
   width: 100%;
@@ -281,7 +271,9 @@ button:active {
 
 h3 {
   color:#2b3872;
-  font-family: 'Prompt', sans-serif;
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 4vw;
   position: relative;
   text-align: center;
@@ -293,7 +285,9 @@ h3 {
 
 h4 {
   color:#2b3872;
-  font-family: 'Prompt', sans-serif;
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 4vw;
   position: relative;
   text-align: center;
@@ -305,7 +299,9 @@ h4 {
 }
 h5 {
   color:#2b3872;
-  font-family: 'Anton', sans-serif;
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 1vw;
   position: relative;
   text-align: center;
@@ -317,7 +313,9 @@ h5 {
 
 h6 {
   color:#ffffff;
-  font-family: 'Archivo Black', sans-serif;;
+  font-family: "forma-djr-deck", sans-serif;
+  font-weight: 900;
+  font-style: normal;
   font-size: 5vw;
   position: relative;
   text-align: center;

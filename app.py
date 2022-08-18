@@ -91,5 +91,26 @@ def sa25():
     return render_template("Sa25.html", sa25=sa25)
 
 
+@app.route("/dp23")
+def dp23():
+    return render_template("Dp23.html")
+
+
+@app.route("/dp24")
+def dp24():
+    return render_template("Dp24.html")
+
+
+@app.route("/cp23")
+def cp23():
+    return render_template("Cp23.html")
+
+
+@app.route("/cp24")
+def cp24():
+    return render_template("Cp24.html")
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)
