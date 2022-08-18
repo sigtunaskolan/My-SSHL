@@ -57,9 +57,25 @@ def sa25():
 def bm23():
     return render_template("Bm23.html")
 
+@app.route("/Dp23")
+def dp23():
+    return render_template("Dp23.html")
+
+@app.route("/Cp23")
+def cp23():
+    return render_template("Cp23.html")
+
+@app.route("/Dp24")
+def dp24():
+    return render_template("Dp24.html")
+
+@app.route("/Cp24")
+def cp24():
+    return render_template("Cp24.html")
+
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
 
 # implement different route per class
 # implement route for weekend
