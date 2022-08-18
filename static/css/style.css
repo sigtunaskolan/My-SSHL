@@ -1,83 +1,374 @@
-@font-face{
-    font-family: coolfont;
-    src: url(../coolvetica_rg.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Prompt:wght@500&display=swap');
+@import url("https://use.typekit.net/lzp4tvs.css");
+
+
+
+body{
+  background-image: url('https://trinker.media/assets/img/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+
 }
 
-h1{
-    color:#ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:100px;
-    position:fixed; left:750px; top:-80px;
+.logga {
+  position: fixed; left: 0vmax; top: 2vmin auto;
+  width: 100%;
+  height: 15vmin;
+  vertical-align: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.logga img{
+  position: relative;  left: 37.5%; top: 2vmin auto;
+  max-width: 25vmax;
+  max-height: 12vmax;
+  vertical-align: auto;
+  margin-top:1.5%;
+  display:flex;
+}
+
+@media (min-width:500px) and (max-width: 800px) {
+  .logga img{
     text-align: center;
+    vertical-align: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative; top: 2vmin auto;
+    
+}
 }
 
+@media screen and (max-width: 600px) {
+  .logga{
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+}
+
+@media screen and (max-width: 600px) {
+  .logga img{
+    position:absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    max-width: 30vmax;
+    max-height: 25vmax;
+}
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .logga img{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    max-width: 25vmax;
+    max-height: 20vmax;
+}
+}
 
 .titel{
-    position:fixed; left: 0px; top: -20px;
+    position:fixed; left: 0px; top: -2%;
     width: 100%;
     box-sizing: content-box;
-    height: 120px;
+    height: 8vmax;
     background-color: #111A3D;
     margin: 0 auto;
     padding: 0 auto;
     text-align: center;
     z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+@media (max-width: 600px) {
+    .titel {
 
-body {
-    background-color: #2b3872;
+      height: 14vmax;
+    }
+}
+  
+.grupp {
+    position:relative; left: 0px; top: 9vmax;
+    width: 50%;
+    box-sizing: content-box;
+    height: 4vmax;
+    background-color: #060f3d;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 30%;
+}
+
+.grupp p{
+    color:#ffffff;
+    font-family: "trade-gothic-next", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4vmax;
+    position:relative; left: 13.5vmax; top: -0.8vmax;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    vertical-align: center;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 500px) {
+    .grupp {
+      display: none;
+
+    }
+    .grupp p{
+      display: none;
+    }
 }
 
 h2 {
   color:#2b3872;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 100px;
+  font-family: "forma-djr-deck", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3vw; 
   text-align: center;
-  position: relative; top: 120px;
+  vertical-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 2vw;
+}
+
+
+
+.container{
+    position: relative; left: 2%; top: 4vh;
+    width: 85%;
+    height: 100%;
+    margin: 15vh auto;; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    vertical-align: center;
+    text-align: center;
+}
+
+.container .button{
+    vertical-align: center;
+    text-align: center;
+    position:relative;
+    width: 60%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, rgb(194, 236, 255), rgb(99, 138, 223));
+    margin: 10%;
+    box-sizing: border-box;
+    border-radius: 2vmin;
+    z-index: 1;
+    display: flex;
+    border: none;
+}
+button:active {
+  border-style: outset;
+}
+
+@media (max-width: 600px) {
+  .container{
+    position: relative; left: 11%; top: 30vw;
+    grid-template-columns: repeat(2, 1fr);
+    width: 70%;
+    height: 100%;
+    margin: 30px;
+    vertical-align: center;
+    text-align: center;
+    align-items: center;
+    }
+  .container .button{
+    position: relative; left: 0px; top: -10vw auto;;
+    width: 60%;
+    height: 80%;
+    margin: 10%;
+    display: inline block;
+  }
+
+  h2 {
+    font-size: 6vw;
+  }
+}
+
+.ib {
+  position:relative; left: 0px; top: 4vmax;
+  width: 20%;
+  box-sizing: content-box;
+  height: 4vmax;
+  background-color: #060f3d;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 30%;
+}
+
+.ib p{
+  color:#ffffff;
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4vmax;
+  position:relative; left: 8vmax; top: -0.8vmax;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+  vertical-align: center;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .ib {
+    display: none;
+  }
+  .ib p{
+    display: inherit;
+  }
+}
+
+.klockan {
+  position: relative; left: 0px; top: 10vmax;
+  width: 40vmax;
+  height:8%;
+  margin: 0 auto;
+  padding: 0 auto;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 2vmin;
+  background-image: linear-gradient(to bottom right, rgb(194, 236, 255), rgb(99, 138, 223));
+}
+
+.klockan .tid {
+  position: relative; left: 0px; top: 0px;
+  width: 100%;
+  height: 100%;
 }
 
 h3 {
-  color:#8aa4c5;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 100px;
-  position: relative; left: 0px; top: -200px;
+  color:#2b3872;
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4vw;
+  position: relative;
   text-align: center;
+  vertical-align: center;
+  width: 100%;
+  margin:auto;
+  margin-top: 4vw;
 }
 
-.container{
-    position: relative;
-    width: 1600px;
-    height: 520px;
-    margin: 240px auto; 
+h4 {
+  color:#2b3872;
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 4vw;
+  position: relative;
+  text-align: center;
+  vertical-align: center;
+  width: 100%;
+  margin:auto;
+  margin-bottom: 5vw;
+  margin-top: 4vw;
+}
+h5 {
+  color:#2b3872;
+  font-family: "trade-gothic-next", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1vw;
+  position: relative;
+  text-align: center;
+  vertical-align: center;
+  width: 100%;
+  margin:auto;
+  margin-bottom: 1vw;
 }
 
-.container .box{
-    position:relative;
-    width: calc(400px - 100px);
-    height: calc(600px - 100px);
-    background: #8aa4c5;
-    float: left;
-    margin: 10px;
-    box-sizing: border-box;
-    border-radius: 10px;
-    transition: all 0.5s;
+h6 {
+  color:#ffffff;
+  font-family: "forma-djr-deck", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 5vw;
+  position: relative;
+  text-align: center;
+  vertical-align: center;
+  width: 100%;
+  margin-bottom: 1vw;
+  background-color: #111A3D;
+  margin:auto;
 }
 
 
-.box:hover{
-    background:#2b3872;
-    transform: scale(1.3);
-    z-index: 2;
     
-}
+  
 
-#top-image {
-    background:url('https://images.unsplash.com/photo-1562619425-c307bb83bc42?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJsdWUlMjBwYWludHxlbnwwfHwwfHw%3D&w=1000&q=80') -25px -50px;
-    position:fixed ;
-    top:0;
-    width:100%;
-    z-index:0;
-      height:100%;
-      background-size: calc(100% + 50px);
-    }
+@media (max-width: 600px) {
+  .klockan{
+    position: relative; left: 0; top:20vmax;
+    width: 80%;
+    height: 100%;
+    vertical-align: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+.klockan .tid{
+    position: relative; left: 0px; top: -10vw auto;;
+    width: 100%;
+    height: 80%;
+    margin: 10%;
+    display: inline block;
+  }
+
+  .klockan .tid h3{
+    font-size: 10vw;
+
+  }
+
+  .klockan .tid h4{
+    font-size: 10vw;
+
+  }
+
+  .klockan .tid h5{
+    font-size: 3vw;
+
+  }
+
+  .klockan .tid h6{
+    font-size: 12vw;
+    width: 126%;
+    margin-top: none;
+    position: relative; left: -8vw; top: -8vw;
+    margin-bottom: 0%;
+  }
+}
